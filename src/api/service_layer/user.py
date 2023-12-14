@@ -1,5 +1,5 @@
 from src.application import dto
-from src.application.adapters.uow import UnitOfWork
+from src.application.interfaces.uow import UnitOfWork
 
 
 async def add_user(user: dto.User, uow: UnitOfWork) -> None:

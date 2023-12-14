@@ -2,7 +2,7 @@ import asyncio
 
 from sqlalchemy.ext.asyncio import create_async_engine
 
-from src.entrypoints.factory import init_api, run_api
+from src.api.factory import run_api, init_api
 from src.infrastructure.db.main import build_sa_session_factory
 
 

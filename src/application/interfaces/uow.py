@@ -1,6 +1,6 @@
 from typing import Protocol
 
-from src.application.adapters.user import UserAdapters
+from src.application.interfaces.user import UserAdapters
 
 
 class UnitOfWork(Protocol):

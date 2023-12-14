@@ -2,10 +2,12 @@ from datetime import datetime
 
 import sqlalchemy as sa
 from sqlalchemy import BigInteger
-from sqlalchemy.orm import Mapped, mapped_column
+from sqlalchemy.orm import Mapped, mapped_column, registry
 
 from src.application import dto
 from .base import TimedBaseModel
+
+mapper_registry = registry()
 
 
 class User(TimedBaseModel):

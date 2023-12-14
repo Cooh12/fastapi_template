@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 from sqlalchemy.ext.asyncio import async_sessionmaker, AsyncSession
 
-from src.entrypoints.providers.uow import UnitOfWorkProvider, uow_provider
+from src.api.providers.uow import UnitOfWorkProvider, uow_provider
 
 
 def setup_providers(app: FastAPI, pool: async_sessionmaker[AsyncSession]) -> None:

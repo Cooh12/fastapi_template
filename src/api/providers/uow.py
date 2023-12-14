@@ -2,7 +2,7 @@ from typing import AsyncIterator
 
 from sqlalchemy.ext.asyncio import async_sessionmaker, AsyncSession
 
-from src.infrastructure.service_layer.unit_of_work import SqlAlchemyUnitOfWork
+from src.infrastructure.db.unit_of_work import SqlAlchemyUnitOfWork
 
 
 def uow_provider() -> SqlAlchemyUnitOfWork:

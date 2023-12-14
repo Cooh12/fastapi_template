@@ -2,8 +2,8 @@ import uvicorn
 from fastapi import FastAPI
 from sqlalchemy.ext.asyncio import AsyncSession, async_sessionmaker
 
-from src.entrypoints.providers.main import setup_providers
-from src.entrypoints.routers.setup import setup_routes
+from src.api.providers.main import setup_providers
+from src.api.routers.setup import setup_routes
 
 
 def init_api(pool: async_sessionmaker[AsyncSession]) -> FastAPI:

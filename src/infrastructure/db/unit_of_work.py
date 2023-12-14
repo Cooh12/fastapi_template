@@ -2,7 +2,7 @@ from __future__ import annotations
 
 from sqlalchemy.ext.asyncio import AsyncSession
 
-from src.application.adapters.uow import UnitOfWork
+from src.application.interfaces.uow import UnitOfWork
 from src.infrastructure.db.repositories.user import UserRepository
 
 
