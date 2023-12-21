@@ -3,9 +3,9 @@ db:
   connector: asyncpg
   host: localhost
   port: 5432
-  login: admin
-  password: 4321567
-  database: fastapi_template
+  login: login
+  password: password
+  database: name
   echo: false
 api:
   host: localhost
